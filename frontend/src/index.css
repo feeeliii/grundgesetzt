@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pink: #e471b6;
+  --color-black: #0b0307;
+  --color-white: #ffffff;
+  --color-orange: #dd4820;
+  --color-blue: #08bbc0;
+  --color-green: #02b45f;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Teko", sans-serif;
+}
