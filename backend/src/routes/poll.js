@@ -1,12 +1,13 @@
-const express = require('express')
+import express from 'express'
+import db from '../database.js'
+
 const router = express.Router()
-const db = require('../database')
 
 // Vote abgeben
 router.post('/vote', (req, res) => {
     const { optionId, visitorId } = req.body
 
-    if (!optionId || optionId < 1 || optionId > 5) {
+    if (!optionId || optionId < 1 || optionId > 4) {  // ⚠️ Geändert auf 4, du hast nur 4 Optionen!
         return res.status(400).json({ error: 'Ungültige Option' })
     }
 
@@ -35,7 +36,7 @@ router.get('/results', (req, res) => {
             GROUP BY optionId
         `).all()
 
-        const results = [1, 2, 3, 4, 5].map(id => ({
+        const results = [1, 2, 3, 4].map(id => ({  // ⚠️ Geändert auf 4!
             optionId: id,
             votes: votes.find(v => v.optionId === id)?.votes || 0
         }))
@@ -58,4 +59,4 @@ router.get('/check/:visitorId', (req, res) => {
     }
 })
 
-module.exports = router
+export default router  

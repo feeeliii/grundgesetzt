@@ -3,6 +3,8 @@ import { motion } from 'framer-motion'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 
+const API_URL = import.meta.env.VITE_API_URL || 'https://grundgesetzt.de'
+
 const options = [
     { id: 1, text: 'Die Landesverfassungen (z.B. Bayern)' },
     { id: 2, text: 'Das Strafgesetzbuch (StGB)' },
@@ -33,7 +35,7 @@ const PollSection = () => {
     const checkIfVoted = async () => {
         try {
             const visitorId = getVisitorId()
-            const response = await axios.get(`http://localhost:3001/api/poll/check/${visitorId}`)
+            const response = await axios.get(`${API_URL}/api/poll/check/${visitorId}`)
             if (response.data.hasVoted) {
                 setHasVoted(true)
                 fetchResults()
@@ -47,7 +49,7 @@ const PollSection = () => {
 
     const fetchResults = async () => {
         try {
-            const response = await axios.get('http://localhost:3001/api/poll/results')
+            const response = await axios.get(`${API_URL}/api/poll/results`)
             setResults(response.data.results)
             setTotalVotes(response.data.totalVotes)
         } catch (error) {
@@ -60,7 +62,7 @@ const PollSection = () => {
 
         try {
             const visitorId = getVisitorId()
-            await axios.post('http://localhost:3001/api/poll/vote', {
+            await axios.post(`${API_URL}/api/poll/vote`, {
                 optionId: selected,
                 visitorId
             })
