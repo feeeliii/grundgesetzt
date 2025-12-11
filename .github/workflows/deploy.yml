@@ -1,0 +1,93 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:  # Manuelles Triggern ermöglichen
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+        cache: 'npm'
+        cache-dependency-path: |
+          frontend/package-lock.json
+          backend/package-lock.json
+    
+    # Frontend Build (lokal in GitHub Actions)
+    - name: Install Frontend Dependencies
+      working-directory: ./frontend
+      run: npm ci
+    
+    - name: Build Frontend
+      working-directory: ./frontend
+      run: npm run build
+    
+    # SSH Key Setup
+    - name: Install SSH Key
+      uses: shimataro/ssh-key-action@v2
+      with:
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        known_hosts: 'placeholder'
+    
+    - name: Add Known Hosts
+      run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+    
+    # Deploy Frontend (nur dist-Ordner)
+    - name: Deploy Frontend
+      run: |
+        rsync -avz --delete \
+          --exclude 'node_modules' \
+          --exclude '.git' \
+          --exclude 'src' \
+          --exclude 'public' \
+          ./frontend/dist/ \
+          ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/grundgesetzt/frontend/dist/
+    
+    # Deploy Backend (ohne node_modules)
+    - name: Deploy Backend
+      run: |
+        rsync -avz --delete \
+          --exclude 'node_modules' \
+          --exclude '.git' \
+          --exclude 'poll.db' \
+          ./backend/ \
+          ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/grundgesetzt/backend/
+    
+    # Backend Setup & Restart
+    - name: Install Backend Dependencies & Restart
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          cd /var/www/grundgesetzt/backend
+          npm ci --production
+          pm2 restart grundgesetzt-api
+          pm2 save
+    
+    # Health Check
+    - name: Verify Deployment
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          echo "=== PM2 Status ==="
+          pm2 status
+          echo ""
+          echo "=== Nginx Status ==="
+          systemctl status nginx --no-pager
+          echo ""
+          echo "=== Backend Logs (last 20 lines) ==="
+          pm2 logs grundgesetzt-api --lines 20 --nostream
