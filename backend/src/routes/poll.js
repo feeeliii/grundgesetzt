@@ -7,7 +7,7 @@ const router = express.Router()
 router.post('/vote', (req, res) => {
     const { optionId, visitorId } = req.body
 
-    if (!optionId || optionId < 1 || optionId > 4) {  // ⚠️ Geändert auf 4, du hast nur 4 Optionen!
+    if (!optionId || optionId < 1 || optionId > 4) {
         return res.status(400).json({ error: 'Ungültige Option' })
     }
 
@@ -23,6 +23,7 @@ router.post('/vote', (req, res) => {
         if (error.code === 'SQLITE_CONSTRAINT_UNIQUE') {
             return res.status(400).json({ error: 'Du hast bereits abgestimmt' })
         }
+        console.error('Vote error:', error)
         res.status(500).json({ error: 'Fehler beim Speichern' })
     }
 })
@@ -36,7 +37,7 @@ router.get('/results', (req, res) => {
             GROUP BY optionId
         `).all()
 
-        const results = [1, 2, 3, 4].map(id => ({  // ⚠️ Geändert auf 4!
+        const results = [1, 2, 3, 4].map(id => ({
             optionId: id,
             votes: votes.find(v => v.optionId === id)?.votes || 0
         }))
@@ -45,6 +46,7 @@ router.get('/results', (req, res) => {
 
         res.json({ results, totalVotes })
     } catch (error) {
+        console.error('Results error:', error)
         res.status(500).json({ error: 'Fehler beim Laden' })
     }
 })
@@ -55,8 +57,9 @@ router.get('/check/:visitorId', (req, res) => {
         const vote = db.prepare('SELECT * FROM votes WHERE visitorId = ?').get(req.params.visitorId)
         res.json({ hasVoted: !!vote })
     } catch (error) {
+        console.error('Check error:', error)
         res.status(500).json({ error: 'Fehler beim Prüfen' })
     }
 })
 
-export default router  
+export default router
