@@ -1,10 +1,13 @@
 # Grundgesetzt Deployment Script
-# Pusht Code zu GitHub und deployed auf dem Server
+# Committed, pusht und deployed automatisch
 
 Write-Host "🚀 Starting deployment..." -ForegroundColor Green
 
-# Git push
-Write-Host "📤 Pushing to GitHub..." -ForegroundColor Cyan
+# Git add, commit, push
+Write-Host "📤 Committing and pushing to GitHub..." -ForegroundColor Cyan
+git add .
+$commitMessage = Read-Host "Commit message"
+git commit -m "$commitMessage"
 git push origin main
 
 # SSH und deploy auf Server
