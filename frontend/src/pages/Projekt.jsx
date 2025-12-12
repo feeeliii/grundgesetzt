@@ -9,25 +9,23 @@ const Projekt = () => {
     const sections = [
         {
             title: 'Worum geht es bei dem Projekt?',
-            text: 'Auf den ersten Blick erinnert "grundgesetzt" natürlich an unser "Grundgesetz", die Basis unserer Demokratie, die Gleichheit für alle Menschen garantiert. Aber wir haben uns bewusst für diese kleine, aber feine Abwandlung entschieden. "Grundgesetzt" ist ein Wortspiel, das "Grundgesetz" mit dem Wort "gesetzt" verbindet. Linguistisch gesehen ist "grundgesetzt" das Partizip Perfekt von "grundsetzen", was so viel bedeutet wie "etwas grundlegend festlegen" oder "etwas etablieren". Es klingt vertraut, birgt aber gleichzeitig die Idee des "Neu-Setzens" oder "Wieder-Etablierens" in sich. Genau hier liegt die doppelte Bedeutung, die unser Projekt so wunderbar beschreibt: Wir nehmen das Fundament unseres Grundgesetzes und "setzen" es im wahrsten Sinne des Wortes neu – und zwar in einer geschlechtergerechten Sprache. Das Grundgesetz verspricht uns allen Gleichheit, und mit "grundgesetzt" drücken wir aus, dass wir diese Gleichheit auch sprachlich aktiv umsetzen und sichtbar machen wollen. Es ist eine bewusste Neuausrichtung, die sowohl auf unsere Verfassung verweist als auch den aktiven Schritt betont, diese Werte sprachlich zu verankern.',
-            starColor: 'text-pink',
+            text: 'Wir haben das Grundgesetz in geschlechtergerechte Sprache übersetzt. Denn obwohl unsere Verfassung Gleichheit für alle garantiert, verwendet sie fast ausschließlich männliche Formen. Mit "grundgesetzt" zeigen wir, wie ein Grundgesetz aussehen könnte, das alle Menschen auch sprachlich einschließt.',            starColor: 'text-pink',
             lineColor: 'text-pink'
         },
         {
             title: 'Wieso der Name "grundgesetzt"?',
-            text: 'Auf den ersten Blick erinnert "grundgesetzt" natürlich an unser "Grundgesetz", die Basis unserer Demokratie, die Gleichheit für alle Menschen garantiert. Aber wir haben uns bewusst für diese kleine, aber feine Abwandlung entschieden. "Grundgesetzt" ist ein Wortspiel, das "Grundgesetz" mit dem Wort "gesetzt" verbindet. Linguistisch gesehen ist "grundgesetzt" das Partizip Perfekt von "grundsetzen", was so viel bedeutet wie "etwas grundlegend festlegen" oder "etwas etablieren". Es klingt vertraut, birgt aber gleichzeitig die Idee des "Neu-Setzens" oder "Wieder-Etablierens" in sich. Genau hier liegt die doppelte Bedeutung, die unser Projekt so wunderbar beschreibt: Wir nehmen das Fundament unseres Grundgesetzes und "setzen" es im wahrsten Sinne des Wortes neu – und zwar in einer geschlechtergerechten Sprache. Das Grundgesetz verspricht uns allen Gleichheit, und mit "grundgesetzt" drücken wir aus, dass wir diese Gleichheit auch sprachlich aktiv umsetzen und sichtbar machen wollen. Es ist eine bewusste Neuausrichtung, die sowohl auf unsere Verfassung verweist als auch den aktiven Schritt betont, diese Werte sprachlich zu verankern.',
-            starColor: 'text-orange',
+            text: '"Grundgesetzt" verbindet das Grundgesetz mit dem Wort "setzen" – im Sinne von neu setzen, neu etablieren. Denn genau das tun wir: Wir nehmen das Fundament unserer Verfassung und setzen es sprachlich neu. Das Grundgesetz verspricht Gleichheit für alle – mit "grundgesetzt" machen wir diese Gleichheit auch in der Sprache sichtbar.',            starColor: 'text-orange',
             lineColor: 'text-orange'
         },
         {
             title: 'Wer steht hinter dem Projekt?',
-            text: 'Stellt euch vor! Wer seid ihr, was macht ihr sonst so, und wie kam es zu diesem Projekt?',
+            text: 'Wir sind Feli und Josy, zwei Freundinnen aus Berlin. Josy ist Designerin und für unsere wunderschönen Bookcovers zuständig. Feli hat Jura studiert und das Grundgesetz umgeschrieben.',
             starColor: 'text-blue',
             lineColor: 'text-blue'
         },
         {
             title: 'Was plant ihr für die Zukunft?',
-            text: 'Teile eure Vision! Welche Pläne habt ihr? Was kommt als nächstes?',
+            text: 'Das Grundgesetz war unser erster Schritt, aber nicht unser letzter. Wir möchten weitere Rechtstexte umschreiben und zugänglicher machen. Noch wichtiger ist uns aber der Dialog: Wie kann Sprache das Recht inklusiver gestalten? Wer fühlt sich angesprochen, wer nicht – und warum?',
             starColor: 'text-green',
             lineColor: 'text-green'
         }
