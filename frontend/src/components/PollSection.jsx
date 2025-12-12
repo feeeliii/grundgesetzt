@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 
-const API_URL = import.meta.env.VITE_API_URL || 'https://grundgesetzt.de'
+const API_URL = import.meta.env.VITE_API_URL || ''
 
 const options = [
     { id: 1, text: 'Die Landesverfassungen (z.B. Bayern)' },
