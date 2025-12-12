@@ -36,7 +36,7 @@ const Home = () => {
             <Navbar />
             <Hero />
             <WhySection introComplete={introComplete} />
-            <LearnMore topic="das Projekt" introComplete={introComplete}/>
+            <LearnMore topic="das Projekt" introComplete={introComplete} link="/projekt"/>
             <StatsSection />
             <LearnMore topic="unsere Vorgehensweise" useScrollAnimation />
             <PollSection />

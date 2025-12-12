@@ -5,7 +5,7 @@ import arrowdown from '../assets/arrowdown.png'
 const faqs = [
     {
         question: 'Was ist das Grundgesetz für alle?',
-        answer: 'Das Grundgesetz für alle ist ein Projekt, das sich für eine gendergerechte Sprache im deutschen Grundgesetz einsetzt.'
+        answer: 'Das Grundgesetz für alle ist das Grundgesetz in genderneutraler Sprache.'
     },
     {
         question: 'Warum ist gendergerechte Sprache wichtig?',
@@ -13,7 +13,7 @@ const faqs = [
     },
     {
         question: 'Aber ist juristische Sprache nicht neutral?',
-        answer: 'Kurz: Nein. Der klassische rechtspositivistische Gedanke geht so: Das Recht steht im Gesetz, der Richter wendet es an, fertig. Objektivität bedeutet hier: keine persönlichen Wertungen, keine Politik, nur Subsumtion. Das Recht erscheint als etwas, das einfach da ist neutral, technisch, über den Dingen stehend. Das Problem: Diese Vorstellung verschleiert, dass Recht immer gemacht wird von Menschen, in einer bestimmten historischen Situation, mit einer bestimmten Sprache. Das Grundgesetz von 1949 wurde von 61 Männern und 4 Frauen geschrieben. Die Sprache, die sie wählten, war nicht "neutral", sondern spiegelte ihre Perspektive. Das generische Maskulinum ist ein Beispiel für eingeschriebene Machtverhältnisse – nicht weil jemand böswillig war, sondern weil Sprache historisch gewachsene Strukturen transportiert. Geschlechtergerechte Sprache reflektiert das. Sie sagt nicht: Das Recht war bisher falsch. Sie sagt: Wir können es besser machen, weil wir die Machtdimension von Sprache verstanden haben. Wenn Recht als kommunikativer Prozess verstanden wird, dann ist die Frage, wer in dieser Kommunikation vorkommt, eine demokratische Frage. Eine Verfassung, die alle anspricht, stärkt das Gefühl, Teil des politischen Gemeinwesens zu sein.'
+        answer: 'Nein, juristische Sprache ist nicht neutral. Viele Menschen denken, dass Gesetze einfach geschrieben stehen und Richter sie dann anwenden. Objektivität bedeutet in dieser Vorstellung, dass keine persönlichen Meinungen einfließen, sondern nur sachlich gearbeitet wird. Das Recht wirkt dadurch neutral und technisch, wie etwas, das einfach so existiert. Diese Sichtweise übersieht aber etwas Wichtiges. Recht wird immer von Menschen gemacht, und zwar in einer bestimmten Zeit und mit einer bestimmten Perspektive. Das Grundgesetz von 1949 wurde zum Beispiel von 61 Männern und nur 4 Frauen geschrieben. Die Sprache, die sie verwendeten, war nicht neutral, sondern spiegelte ihre Sicht der Welt wider. Das generische Maskulinum ist ein gutes Beispiel dafür. Wenn wir "der Bürger" sagen und damit alle Menschen meinen, dann sind darin Machtverhältnisse eingebaut. Das geschah nicht aus böser Absicht, sondern weil Sprache historisch gewachsene Strukturen weiterträgt. Geschlechtergerechte Sprache macht genau das sichtbar. Sie behauptet nicht, dass alles bisher falsch war. Sie sagt vielmehr, dass wir es heute besser machen können, weil wir verstehen, dass Sprache nicht neutral ist. Wenn Recht ein Kommunikationsprozess ist, dann wird die Frage wichtig, wer in dieser Kommunikation vorkommt und wer angesprochen wird. Eine Verfassung, die alle Menschen direkt anspricht, stärkt das Gefühl, wirklich Teil der Gesellschaft zu sein. Das ist letztlich eine demokratische Frage.'
 
 
     },
@@ -23,11 +23,11 @@ const faqs = [
     },
     {
         question: 'Wo kann ich das Buch kaufen?',
-        answer: 'Wir arbeiten mit keinem Verlag zusammen. Stattdessen haben wir einen Self-publishing Service benutzt. Das ist für ein kleines Projekt wie dieses das sehr unkompliziert und kostengünstig. Das Buch kannst du auf verschiedenen Plattformen kaufen, die mit dem Self-publishing Service kooperieren. Eine Auswahl findest du oben unter "Buch kaufen".'
+        answer: 'Wir benutzen einen Self-publishing Service. Das ist für ein kleines Projekt wie dieses super, da es kein finanzielles Risiko für uns darstellt (z.B. weil wir nicht in Vorleistung gehen müssen). Das Buch kannst du auf verschiedenen Plattformen kaufen, die mit dem Self-publishing Service kooperieren. Eine Auswahl findest du oben unter "Buch kaufen".'
     },
     {
         question: 'Plant ihr, noch weitere Rechtstexte umzuschreiben?',
-        answer: 'Unbedingt.'
+        answer: 'Unbedingt. :)'
     },
     {
         question: 'Wie kann ich das Projekt unterstützen?',

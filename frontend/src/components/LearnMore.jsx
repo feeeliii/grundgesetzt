@@ -1,10 +1,11 @@
 import arrowright from '../assets/arrowright.png'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
-const LearnMore = ({ topic, introComplete, useScrollAnimation = false }) => {
-    return (
+const LearnMore = ({ topic, introComplete, useScrollAnimation = false, link }) => {
+    const content = (
         <motion.div 
-            className="flex items-center justify-center gap-2 mb-12"
+            className="flex items-center justify-center gap-2 mb-12 cursor-pointer hover:opacity-80 transition-opacity"
             initial={{ opacity: 0, y: 20 }}
             animate={!useScrollAnimation && introComplete ? { opacity: 1, y: 0 } : undefined}
             whileInView={useScrollAnimation ? { opacity: 1, y: 0 } : undefined}
@@ -21,6 +22,8 @@ const LearnMore = ({ topic, introComplete, useScrollAnimation = false }) => {
             </p>
         </motion.div>
     )
+
+    return link ? <Link to={link}>{content}</Link> : content
 }
 
 export default LearnMore
