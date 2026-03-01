@@ -1,5 +1,5 @@
 import express from 'express'
-import db from '../database.js'
+import { pollDb } from '../database.js'
 
 const router = express.Router()
 
@@ -16,7 +16,7 @@ router.post('/vote', (req, res) => {
     }
 
     try {
-        const stmt = db.prepare('INSERT INTO votes (optionId, visitorId) VALUES (?, ?)')
+        const stmt = pollDb.prepare('INSERT INTO votes (optionId, visitorId) VALUES (?, ?)')
         stmt.run(optionId, visitorId)
         res.json({ success: true, message: 'Stimme gezählt!' })
     } catch (error) {
@@ -31,7 +31,7 @@ router.post('/vote', (req, res) => {
 // Ergebnisse abrufen
 router.get('/results', (req, res) => {
     try {
-        const votes = db.prepare(`
+        const votes = pollDb.prepare(`
             SELECT optionId, COUNT(*) as votes 
             FROM votes 
             GROUP BY optionId
@@ -54,7 +54,7 @@ router.get('/results', (req, res) => {
 // Check if visitor already voted
 router.get('/check/:visitorId', (req, res) => {
     try {
-        const vote = db.prepare('SELECT * FROM votes WHERE visitorId = ?').get(req.params.visitorId)
+        const vote = pollDb.prepare('SELECT * FROM votes WHERE visitorId = ?').get(req.params.visitorId)
         res.json({ hasVoted: !!vote })
     } catch (error) {
         console.error('Check error:', error)

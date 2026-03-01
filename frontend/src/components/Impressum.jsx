@@ -23,7 +23,7 @@ const Impressum = () => {
                 >
                     <div>
                         <p>© Copyright Texte by Felicitas Strickmann</p>
-                        <p>© Copyright Umschlaggestaltung by Josy</p>
+                        <p>© Copyright Umschlaggestaltung by Felicitas Strickmann</p>
                     </div>
 
                     <div>

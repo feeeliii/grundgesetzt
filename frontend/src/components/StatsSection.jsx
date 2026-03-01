@@ -9,7 +9,7 @@ const StatsSection = () => {
 
     useEffect(() => {
         if (isInView) {
-            const target = 253
+            const target = 412
             const duration = 3000 // 3 Sekunden
             const steps = 60
             const increment = target / steps
@@ -43,7 +43,7 @@ const StatsSection = () => {
                         {count}
                     </p>
                     <p className="font-['Teko'] text-3xl lg:text-4xl text-white mt-4">
-                        Stellen haben wir verändert
+                        Stellen wurden geändert
                     </p>
                 </motion.div>
             </div>

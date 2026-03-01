@@ -5,12 +5,11 @@ import { dirname, join } from 'path'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
-// Datenbank im backend-Ordner (nicht in src/)
-const dbPath = join(__dirname, '..', 'poll.db')
-const db = new Database(dbPath)
+// Poll-Datenbank
+const pollDbPath = join(__dirname, '..', 'poll.db')
+const pollDb = new Database(pollDbPath)
 
-// Tabelle erstellen falls nicht vorhanden
-db.exec(`
+pollDb.exec(`
   CREATE TABLE IF NOT EXISTS votes (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     optionId INTEGER NOT NULL,
@@ -19,6 +18,18 @@ db.exec(`
   )
 `)
 
-console.log('Datenbankverbindung erfolgreich hergestellt.')
+// Newsletter-Datenbank
+const newsletterDbPath = join(__dirname, '..', 'newsletter.db')
+const newsletterDb = new Database(newsletterDbPath)
 
-export default db
+newsletterDb.exec(`
+  CREATE TABLE IF NOT EXISTS subscribers (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    email TEXT NOT NULL UNIQUE,
+    createdAt DATETIME DEFAULT CURRENT_TIMESTAMP
+  )
+`)
+
+console.log('Datenbankverbindungen erfolgreich hergestellt.')
+
+export { pollDb, newsletterDb }

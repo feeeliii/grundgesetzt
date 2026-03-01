@@ -18,14 +18,13 @@ const Projekt = () => {
             lineColor: 'text-orange'
         },
         {
-            title: 'Wer steht hinter dem Projekt?',
-            text: 'Wir sind Feli und Josy, zwei Freundinnen aus Berlin. Josy ist Designerin und für unsere wunderschönen Bookcovers zuständig. Feli hat Jura studiert und das Grundgesetz umgeschrieben.',
-            starColor: 'text-blue',
+            title: 'Was meint ihr mit "gendergerechte Sprache"?',
+            text: 'Gendergerechte Sprache ist eine Form der Sprache, die alle Geschlechter sichtbar macht. Im Deutschen wird das generische Maskulinum verwendet, um alle Menschen zu bezeichnen (z.B. "der Bürger" für alle Menschen). Gendergerechte Sprache verwendet stattdessen Formen, die alle Geschlechter einschließen, z.B. "die Bürger*innen" oder "die Bürger:innen". In unserem Buch haben wir uns für das sogenannte Gendersternchen entschieden. Wo möglich, haben wir auf genderneutrale Begriffe zurückgegriffen. Wenn du mehr darüber erfahren möchtest, schau doch mal bei Vorgehensweise vorbei.',            starColor: 'text-blue',
             lineColor: 'text-blue'
         },
         {
             title: 'Was plant ihr für die Zukunft?',
-            text: 'Das Grundgesetz war unser erster Schritt, aber nicht unser letzter. Wir möchten weitere Rechtstexte umschreiben und zugänglicher machen. Noch wichtiger ist uns aber der Dialog: Wie kann Sprache das Recht inklusiver gestalten? Wer fühlt sich angesprochen, wer nicht – und warum?',
+            text: 'Gute Frage! Das Projekt "grundgesetzt" ist als Startpunkt gedacht. Es soll zeigen, wie Rechtstexte in geschlechtergerechter Sprache aussehen können. In Zukunft wollen wir weitere Rechtstexte umschreiben. Welche das sein werden, wollen wir gemeinsam mit euch entscheiden. Stimmt gerne oben ab oder schickt uns euren Vorschlag. :)',            starColor: 'text-green',
             starColor: 'text-green',
             lineColor: 'text-green'
         }

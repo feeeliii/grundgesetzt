@@ -5,13 +5,29 @@ const NewsletterSection = () => {
     const [email, setEmail] = useState('')
     const [status, setStatus] = useState(null)
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        // Platzhalter - später Keila Integration
-        console.log('Newsletter signup:', email)
-        setStatus('success')
-        setEmail('')
+    const handleSubmit = async (e) => {
+    e.preventDefault()
+    setStatus('loading')
+
+    try {
+        const res = await fetch(`${API_URL}/api/newsletter/subscribe`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email })
+        })
+
+        if (res.ok) {
+            setStatus('success')
+            setEmail('')
+        } else {
+            setStatus('error')
+        }
+    } catch {
+        setStatus('error')
     }
+}
+
+
 
     return (
         <section className="bg-pink py-16 px-8">
@@ -69,6 +85,17 @@ const NewsletterSection = () => {
                         ✓ Erfolgreich angemeldet!
                     </motion.p>
                 )}
+
+                {status === 'error' && (
+                <motion.p
+                    className="mt-6 text-white text-lg"
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                >
+                    Etwas ist schiefgelaufen. Versuch es bitte nochmal.
+                </motion.p>
+            )}
+
             </div>
         </section>
     )

@@ -4,8 +4,8 @@ import arrowdown from '../assets/arrowdown.png'
 
 const faqs = [
     {
-        question: 'Was ist das Grundgesetz für alle?',
-        answer: 'Das Grundgesetz für alle ist das Grundgesetz in genderneutraler Sprache.'
+        question: 'Worum geht es bei dem Projekt?',
+        answer: 'Wir haben das Grundgesetz umgeschrieben, damit es auch sprachlich für alle da ist. Alle 146 Artikel des Grundgesetzes findest du in genderneutraler Sprache in diesem Buch.'
     },
     {
         question: 'Warum ist gendergerechte Sprache wichtig?',
@@ -19,19 +19,19 @@ const faqs = [
     },
     {
         question: 'Wer steht hinter dem Projekt?',
-        answer: 'Wir sind Feli und Josy, zwei Freundinnen aus Berlin. Josy ist Designerin und für unsere wunderschönen Bookcovers zuständig. Feli hat Jura studiert und das Grundgesetz umgeschrieben.'
+        answer: 'Hinter dem Projekt stehe ich, Feli. Hi! :) Ich habe Jura studiert und lebe in Berlin. Das Buch ist ein Herzensprojekt, das ich in meiner Freizeit umsetze.'
     },
     {
         question: 'Wo kann ich das Buch kaufen?',
-        answer: 'Wir benutzen einen Self-publishing Service. Das ist für ein kleines Projekt wie dieses super, da es kein finanzielles Risiko für uns darstellt (z.B. weil wir nicht in Vorleistung gehen müssen). Das Buch kannst du auf verschiedenen Plattformen kaufen, die mit dem Self-publishing Service kooperieren. Eine Auswahl findest du oben unter "Buch kaufen".'
+        answer: 'Das Buch wird über den Self-Publishing-Dienstleister Epubli veröffentlicht und ist dadurch auf verschiedenen Buchplattformen erhältlich. Eine Auswahl findest du oben unter „Buch kaufen".'
     },
     {
-        question: 'Plant ihr, noch weitere Rechtstexte umzuschreiben?',
-        answer: 'Unbedingt. :)'
+        question: 'Werden noch weitere Rechtstexte umgeschrieben?',
+        answer: 'Das ist geplant! Stimme gerne oben ab oder schick mir deinen Vorschlag. :)'
     },
     {
         question: 'Wie kann ich das Projekt unterstützen?',
-        answer: 'Du kannst das Projekt unterstützen, indem du unseren Newsletter abonnierst, das Buch kaufst oder die Botschaft in deinem Umfeld teilst.'
+        answer: 'Du kannst das Projekt unterstützen, indem du den Newsletter abonnierst, das Buch kaufst oder das Projekt in deinem Umfeld teilst.'
     },
 ]
 

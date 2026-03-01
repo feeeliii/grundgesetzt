@@ -25,7 +25,7 @@ const Kontakt = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
-                        Du hast Anregungen, Ideen, oder möchstest einfach über das Projekt quatschen? Schreibt uns gerne auf{' '}
+                        Du hast Anregungen, Ideen, oder möchstest einfach über das Projekt quatschen? Schreib mir gerne auf{' '}
                         <a 
                             href="mailto:hallo@grundgesetzt.de" 
                             className="text-pink underline hover:text-pink/80 transition-colors"
@@ -40,7 +40,7 @@ const Kontakt = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
-                        Feli & Josy
+                        Feli
                     </motion.p>
 
 
