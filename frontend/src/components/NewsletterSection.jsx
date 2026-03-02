@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 
 const NewsletterSection = () => {
     const [email, setEmail] = useState('')
@@ -49,7 +49,7 @@ const NewsletterSection = () => {
                     transition={{ duration: 0.6, delay: 0.1 }}
                     viewport={{ once: true }}
                 >
-                    Melde dich für unseren Newsletter an und erfahre als Erstes von Neuigkeiten.
+                    Melde dich für unseren Newsletter an und erfahre als Erste*r von Neuigkeiten.
                 </motion.p>
 
                 <motion.form
@@ -82,7 +82,7 @@ const NewsletterSection = () => {
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                     >
-                        ✓ Erfolgreich angemeldet!
+                        Supi! Ein Bestätigungslink ist auf dem Weg zu dir. 
                     </motion.p>
                 )}
 

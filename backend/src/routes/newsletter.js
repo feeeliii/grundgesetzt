@@ -10,8 +10,7 @@ router.post('/subscribe', async (req, res) => {
   }
 
   try {
-    // Anfrage an Brevo API senden
-    const response = await fetch('https://api.brevo.com/v3/contacts', {
+    const response = await fetch('https://api.brevo.com/v3/contacts/doubleOptinConfirmation', {
       method: 'POST',
       headers: {
         'accept': 'application/json',
@@ -20,24 +19,19 @@ router.post('/subscribe', async (req, res) => {
       },
       body: JSON.stringify({
         email: email,
-        listIds: [2], 
-        updateEnabled: false
+        includeListIds: [2],         
+        templateId: 1,              
+        redirectionUrl: 'https://grundgesetzt.de/danke'  
       })
     })
 
-    const data = await response.json()
-
-    // Brevo gibt Fehler zurück, wenn User schon existiert
-    if (!response.ok) {
-      // Code "duplicate_parameter" heißt: User ist schon drin. Das werten wir als Erfolg.
-      if (data.code === 'duplicate_parameter') {
-        return res.json({ success: true, message: 'Bereits angemeldet' })
-      }
-      console.error('Brevo Error:', data)
-      throw new Error(data.message || 'Fehler bei Brevo')
+    if (response.status === 204) {
+      return res.json({ success: true })
     }
 
-    res.json({ success: true })
+    const data = await response.json()
+    console.error('Brevo Error:', data)
+    throw new Error(data.message || 'Fehler bei Brevo')
 
   } catch (err) {
     console.error('Newsletter Error:', err)

@@ -34,8 +34,8 @@ const Navbar = () => {
             <Star 
               className={`${
                 isActive(item.href) 
-                  ? 'w-[50px] h-[48px] text-pink' 
-                  : 'w-[32px] h-[30px] text-black'
+                  ? 'w-[50px] h-12 text-pink' 
+                  : 'w-8 h-[30px] text-black'
               }`} 
             />
             <span className="font-['Teko'] text-[28px] text-black leading-none">
@@ -91,8 +91,8 @@ const Navbar = () => {
               <Star 
                 className={`${
                   isActive(item.href) 
-                    ? 'w-[50px] h-[48px] text-pink' 
-                    : 'w-[32px] h-[30px] text-black'
+                    ? 'w-[50px] h-12 text-pink' 
+                    : 'w-8 h-[30px] text-black'
                 }`} 
               />
               <span className="font-['Teko'] text-[24px] text-black leading-none">

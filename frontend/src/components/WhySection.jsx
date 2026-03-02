@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 import male from '../assets/male.png'
 import everyone from '../assets/everyone.png'
 import speech from '../assets/speech.png'
@@ -28,7 +28,7 @@ const WhySection = ({ introComplete }) => {
                 className="font-['Teko'] text-4xl md:text-5xl lg:text-5xl text-center text-black mb-12"
                 initial={{ opacity: 0, y: 30 }}
                 animate={introComplete ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6 }}
+                transition={{ duration: 0.6, delay: 0.8 }}
             >
                 Wieso brauchen wir ein genderneutrales Grundgesetz?
             </motion.h2>

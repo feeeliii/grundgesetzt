@@ -1,5 +1,5 @@
 import arrowright from '../assets/arrowright.png'
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 
 const GoUp = () => {
     const scrollToTop = () => {

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 import Star from './Star'
 
 const generateFragments = () => {
@@ -24,7 +24,7 @@ const fragments = generateFragments()
 
 const Intro = ({ onComplete }) => {
   useEffect(() => {
-    const timer = setTimeout(() => onComplete(), 2000)
+    const timer = setTimeout(() => onComplete(), 1600)
     return () => clearTimeout(timer)
   }, [onComplete])
 
