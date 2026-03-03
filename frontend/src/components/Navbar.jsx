@@ -10,7 +10,7 @@ const Navbar = () => {
   const menuItems = [
     { name: 'Das Buch', href: '/home' },
     { name: 'Das Projekt', href: '/projekt' },
-    { name: 'Vorgehensweise', href: '/#vorgehensweise' },
+    { name: 'Vorgehensweise', href: '/vorgehensweise' },
     { name: 'Kontakt', href: '/kontakt' }
   ]
 

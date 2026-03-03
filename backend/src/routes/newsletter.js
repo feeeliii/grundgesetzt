@@ -25,7 +25,7 @@ router.post('/subscribe', async (req, res) => {
       })
     })
 
-    if (response.status === 204) {
+    if (response.ok) {
       return res.json({ success: true })
     }
 
