@@ -31,3 +31,10 @@ coverage/
 
 # Build output
 frontend/dist
+
+# Datenbanken
+# Datenbanken (WICHTIG!)
+*.db
+*.sqlite
+*.sqlite3
+backend/*.db
