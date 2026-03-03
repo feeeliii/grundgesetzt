@@ -13,8 +13,7 @@ const faqs = [
     },
     {
         question: 'Aber ist juristische Sprache nicht neutral?',
-        answer: 'Nein, juristische Sprache ist nicht neutral. Viele Menschen denken, dass Gesetze einfach geschrieben stehen und Richter sie dann anwenden. Objektivität bedeutet in dieser Vorstellung, dass keine persönlichen Meinungen einfließen, sondern nur sachlich gearbeitet wird. Das Recht wirkt dadurch neutral und technisch, wie etwas, das einfach so existiert. Diese Sichtweise übersieht aber etwas Wichtiges. Recht wird immer von Menschen gemacht, und zwar in einer bestimmten Zeit und mit einer bestimmten Perspektive. Das Grundgesetz von 1949 wurde zum Beispiel von 61 Männern und nur 4 Frauen geschrieben. Die Sprache, die sie verwendeten, war nicht neutral, sondern spiegelte ihre Sicht der Welt wider. Das generische Maskulinum ist ein gutes Beispiel dafür. Wenn wir "der Bürger" sagen und damit alle Menschen meinen, dann sind darin Machtverhältnisse eingebaut. Das geschah nicht aus böser Absicht, sondern weil Sprache historisch gewachsene Strukturen weiterträgt. Geschlechtergerechte Sprache macht genau das sichtbar. Sie behauptet nicht, dass alles bisher falsch war. Sie sagt vielmehr, dass wir es heute besser machen können, weil wir verstehen, dass Sprache nicht neutral ist. Wenn Recht ein Kommunikationsprozess ist, dann wird die Frage wichtig, wer in dieser Kommunikation vorkommt und wer angesprochen wird. Eine Verfassung, die alle Menschen direkt anspricht, stärkt das Gefühl, wirklich Teil der Gesellschaft zu sein. Das ist letztlich eine demokratische Frage.'
-
+        answer: 'Juristische Sprache gilt als präzise, sachlich und objektiv. Doch Sprache ist nie neutral: Sie formt mit, wie wir die Welt wahrnehmen, wen wir sehen und wen wir übersehen. Und die Sprache des Rechts ist da keine Ausnahme. Das Grundgesetz spricht durchgehend vom Bundeskanzler, vom Bundespräsidenten, vom Beamten, vom Richter. Studien zeigen, dass Menschen bei generisch-maskulinen Begriffen überwiegend an Männer denken. „Mitgemeint" ist nicht dasselbe wie „sichtbar". Gesetze sind keine Naturgesetze. Sie sind menschengemacht, historisch gewachsen und werden ständig angepasst. Das Grundgesetz wurde 1948/49 von 61 Männern und nur vier Frauen erarbeitet. Dass es heute noch durchgehend männlich formuliert ist, ist eine Entscheidung – und keine Notwendigkeit. '
 
     },
     {
@@ -24,10 +23,6 @@ const faqs = [
     {
         question: 'Wo kann ich das Buch kaufen?',
         answer: 'Das Buch wird über den Self-Publishing-Dienstleister Epubli veröffentlicht und ist dadurch auf verschiedenen Buchplattformen erhältlich. Eine Auswahl findest du oben unter „Buch kaufen".'
-    },
-    {
-        question: 'Werden noch weitere Rechtstexte umgeschrieben?',
-        answer: 'Das ist geplant! Stimme gerne oben ab oder schick mir deinen Vorschlag. :)'
     },
     {
         question: 'Wie kann ich das Projekt unterstützen?',
