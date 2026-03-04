@@ -24,7 +24,7 @@ const Projekt = () => {
         },
         {
             title: 'Was plant ihr für die Zukunft?',
-            text: 'Gute Frage! Das Projekt "grundgesetzt" ist als Startpunkt gedacht. Es soll zeigen, wie Rechtstexte in geschlechtergerechter Sprache aussehen können. In Zukunft wollen wir weitere Rechtstexte umschreiben. Welche das sein werden, können wir gemeinsam entscheiden. Stimm gerne oben ab oder schick mir deinen Vorschlag. :)',            starColor: 'text-green',
+            text: 'Gute Frage! Das Projekt "grundgesetzt" ist als Startpunkt gedacht. Es soll zeigen, wie Rechtstexte in geschlechtergerechter Sprache aussehen können. In Zukunft wollen wir weitere Rechtstexte umschreiben. Welche das sein werden, können wir gemeinsam entscheiden. Stimm gerne ab oder schick mir deinen Vorschlag. :)',            starColor: 'text-green',
             starColor: 'text-green',
             lineColor: 'text-green'
         }

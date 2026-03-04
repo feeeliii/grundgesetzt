@@ -5,7 +5,7 @@ import arrowdown from '../assets/arrowdown.png'
 const faqs = [
     {
         question: 'Worum geht es bei dem Projekt?',
-        answer: 'Wir haben das Grundgesetz umgeschrieben, damit es auch sprachlich für alle da ist. Alle 146 Artikel des Grundgesetzes findest du in genderneutraler Sprache in diesem Buch.'
+        answer: 'Wir haben das Grundgesetz, also die Verfassung der Bundesrepublik Deutschland, umgeschrieben, damit es auch sprachlich für alle da ist. In diesem Buch findest du alle 146 Artikel des Grundgesetzes in genderneutraler Sprache.'
     },
     {
         question: 'Warum ist gendergerechte Sprache wichtig?',
@@ -13,7 +13,7 @@ const faqs = [
     },
     {
         question: 'Aber ist juristische Sprache nicht neutral?',
-        answer: 'Juristische Sprache gilt als präzise, sachlich und objektiv. Doch Sprache ist nie neutral: Sie formt mit, wie wir die Welt wahrnehmen, wen wir sehen und wen wir übersehen. Und die Sprache des Rechts ist da keine Ausnahme. Das Grundgesetz spricht durchgehend vom Bundeskanzler, vom Bundespräsidenten, vom Beamten, vom Richter. Studien zeigen, dass Menschen bei generisch-maskulinen Begriffen überwiegend an Männer denken. „Mitgemeint" ist nicht dasselbe wie „sichtbar". Gesetze sind keine Naturgesetze. Sie sind menschengemacht, historisch gewachsen und werden ständig angepasst. Das Grundgesetz wurde 1948/49 von 61 Männern und nur vier Frauen erarbeitet. Dass es heute noch durchgehend männlich formuliert ist, ist eine Entscheidung – und keine Notwendigkeit. '
+        answer: 'Sprache ist nie neutral: Sie übermittelt Einstellungen, Wertvorstellungen und Bedeutungen und verändert sich mit gesellschaftlichen Entwicklungen. Die Sprache des Rechts ist da keine Ausnahme. Das Grundgesetz spricht durchgehend vom Bundeskanzler, vom Bundespräsidenten, vom Beamten, vom Richter. Studien zeigen, dass Menschen bei generisch-maskulinen Begriffen überwiegend an Männer denken. „Mitgemeint" ist nicht dasselbe wie „sichtbar". Gesetze sind außerdem keine Naturgesetze: Sie sind menschengemacht, historisch gewachsen und werden ständig angepasst. Das Grundgesetz wurde 1948/49 von 61 Männern und nur vier Frauen erarbeitet. Dass es heute noch durchgehend männlich formuliert ist, ist eine Entscheidung – und keine Notwendigkeit. '
 
     },
     {
@@ -22,11 +22,13 @@ const faqs = [
     },
     {
         question: 'Wo kann ich das Buch kaufen?',
-        answer: 'Das Buch wird über den Self-Publishing-Dienstleister Epubli veröffentlicht und ist dadurch auf verschiedenen Buchplattformen erhältlich. Eine Auswahl findest du oben unter „Buch kaufen".'
+        answer: ( <>        
+        'Das Buch wird über den Self-Publishing-Dienstleister <a href="https://www.epubli.com/" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-70 transition-opacity">epubli</a> veröffentlicht und ist dadurch auf verschiedenen Buchplattformen erhältlich. Eine Auswahl findest du oben unter „Buch kaufen".'
+        </>)
     },
         {
         question: 'Wie kommt der Preis zustande?',
-        answer: 'Der Preis von 12,99 € setzt sich zusammen aus den Druckkosten des Buches (~8 € pro Exemplar), Vertriebskosten von epubli und der Mehrwertssteuer. Je nachdem, wo du das Buch kaufst, bleibt ein Autor*innenhonorar von 1-2 € pro verkauftem Exemplar übrig. Hiervon bezahle ich die die laufenden Kosten des Projekts (z.B. das Hosting für die Website). Sollte mehr übrig bleiben, will ich das Geld nutzen, um das Buch Menschen oder Organisationen zur Verfügung zu stellen, die es sich nicht leisten können.'
+        answer: 'Der Preis von 12,99 € setzt sich zusammen aus den Druckkosten des Buches (~8 € pro Exemplar), Vertriebskosten von epubli und der Mehrwertssteuer. Je nachdem, wo du das Buch kaufst, bleibt ein Autor*innenhonorar von 1-2 € pro verkauftem Exemplar übrig. Hiervon bezahle ich die laufenden Kosten des Projekts (z.B. das Hosting für die Website). Sollte mehr übrig bleiben, will ich das Geld nutzen, um das Buch Menschen oder Organisationen zur Verfügung zu stellen, die es sich nicht leisten können.'
     },
     {
         question: 'Wie kann ich das Projekt unterstützen?',
@@ -63,9 +65,9 @@ const FAQItem = ({ question, answer }) => {
                         transition={{ duration: 0.3 }}
                         className="overflow-hidden"
                     >
-                        <p className="pb-6 text-black/80">
+                        <div className="pb-6 text-black/80">
                             {answer}
-                        </p>
+                        </div>
                     </motion.div>
                 )}
             </AnimatePresence>
