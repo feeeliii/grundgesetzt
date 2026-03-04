@@ -42,9 +42,15 @@ const Hero = ({ introComplete }) => {
 
       {/* Button - only on mobile/tablet */}
       <div className="flex lg:hidden justify-center px-8 py-8">
-        <button className="bg-pink text-white px-8 py-4 text-lg font-semibold hover:bg-pink/85 transition cursor-pointer">
-          Buch kaufen – 12 €
-        </button>
+        <a 
+            href="https://www.epubli.com/shop/das-grundgesetz-der-bundesrepublik-deutschland-9783565280285"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-pink text-white px-8 py-4 text-lg font-semibold hover:bg-pink/85 transition cursor-pointer"
+        >
+            Buch kaufen – 12,99 €
+        </a>
+        
       </div>
     </section>
   )

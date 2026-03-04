@@ -47,7 +47,7 @@ const Home = () => {
                 <WhySection introComplete={introComplete} />
                 <LearnMore topic="das Projekt" introComplete={introComplete} link="/projekt"/>
                 <StatsSection />
-                <LearnMore topic="unsere Vorgehensweise" useScrollAnimation />
+                <LearnMore topic="unsere Vorgehensweise" useScrollAnimation link="/vorgehensweise"/>
                 <PollSection />
                 <NewsletterSection />
                 <FAQSection />

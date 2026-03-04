@@ -24,6 +24,10 @@ const faqs = [
         question: 'Wo kann ich das Buch kaufen?',
         answer: 'Das Buch wird über den Self-Publishing-Dienstleister Epubli veröffentlicht und ist dadurch auf verschiedenen Buchplattformen erhältlich. Eine Auswahl findest du oben unter „Buch kaufen".'
     },
+        {
+        question: 'Wie kommt der Preis zustande?',
+        answer: 'Der Preis von 12,99 € setzt sich zusammen aus den Druckkosten des Buches (~8 € pro Exemplar), Vertriebskosten von epubli und der Mehrwertssteuer. Je nachdem, wo du das Buch kaufst, bleibt ein Autor*innenhonorar von 1-2 € pro verkauftem Exemplar übrig. Hiervon bezahle ich die die laufenden Kosten des Projekts (z.B. das Hosting für die Website). Sollte mehr übrig bleiben, will ich das Geld nutzen, um das Buch Menschen oder Organisationen zur Verfügung zu stellen, die es sich nicht leisten können.'
+    },
     {
         question: 'Wie kann ich das Projekt unterstützen?',
         answer: 'Du kannst das Projekt unterstützen, indem du den Newsletter abonnierst, das Buch kaufst oder das Projekt in deinem Umfeld teilst.'
