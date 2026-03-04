@@ -23,7 +23,7 @@ const faqs = [
     {
         question: 'Wo kann ich das Buch kaufen?',
         answer: ( <>        
-        'Das Buch wird über den Self-Publishing-Dienstleister <a href="https://www.epubli.com/" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-70 transition-opacity">epubli</a> veröffentlicht und ist dadurch auf verschiedenen Buchplattformen erhältlich. Eine Auswahl findest du oben unter „Buch kaufen".'
+        Das Buch wird über den Self-Publishing-Dienstleister <a href="https://www.epubli.com/" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-70 transition-opacity">epubli</a> veröffentlicht und ist dadurch auf verschiedenen Buchplattformen erhältlich. Eine Auswahl findest du oben unter „Buch kaufen".
         </>)
     },
         {
