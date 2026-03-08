@@ -21,7 +21,7 @@ const Vorgehensweise = () => {
         },
         {
             title: 'Welche Strategien haben dabei geholfen?',
-            text: 'Wenn ein Satz sehr schlecht lesbar war, habe ich verschiedene Techniken angewendet: Sätze umstellen, um den Kasus zu ändern, neutrale Begriffe statt des Gengenderten finden, im Notfall auch Sätze aufteilen, damit nicht zu viele gegenderte Begriffe aufeinandertreffen.',
+            text: 'Wenn ein Satz sehr schlecht lesbar war, habe ich verschiedene Techniken angewendet: Sätze umstellen, Kasus ändern, im Notfall auch Sätze trennen. Mein Ziel war es jedoch immer, möglichst nah am Original zu bleiben und die Sprache zu erhalten.  ',
             starColor: 'text-blue',
             lineColor: 'text-blue'
         },
