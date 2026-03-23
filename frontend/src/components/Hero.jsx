@@ -5,15 +5,15 @@ import buch_mockup from '../assets/buch_mockup.webp'
 const shops = [
     {
         name: 'epubli',
-        url: 'https://www.epubli.com/shop/das-grundgesetz-der-bundesrepublik-deutschland-9783565280285'
+        url: 'https://www.epubli.com/shop/das-grundgesetz-fuer-die-bundesrepublik-deutschland-9783565307647'
     },
     {
         name: 'Amazon',
-        url: 'https://www.amazon.de/-/en/Felicitas-Strickmann/dp/356528028X?crid=24YABRNRLL4R7&dib=eyJ2IjoiMSJ9.ceA16q5oNN466RJfdny2yjYPU1l0Bswtv5Eo3H23vNI.G_7NSREygDMbCZb2GuhakbaooXczldx4IwxPH0tm9gk&dib_tag=se&keywords=grundgesetz+felicitas+strickmann&qid=1772650188&sprefix=grundgesetz+felicitas+%2Caps%2C592&sr=8-1&currency=EUR'  // ← deine URL eintragen
+        url: 'https://www.amazon.de/-/en/Felicitas-Strickmann/dp/3565307641/ref=sr_1_1?crid=YPFQ532OPOH2&dib=eyJ2IjoiMSJ9.4F87i2K8T3-dd4loKvj8jtnhPpwtHCPfFFtgZ94ywF6PwaJ6QbjpvnwV0hmhFGJRkfIUQKy-BoC6ZSucUl78CnfklHJlEQImpjh_9Nn_Kc4.sKKWDqe7lGhFYNJGHJb6jZAwv24EL7U9yZ7PXv2qm2Q&dib_tag=se&keywords=felicitas+strickmann&qid=1774267045&sprefix=felicitas+strickmann%2Caps%2C102&sr=8-1'  // ← deine URL eintragen
     },
     {
         name: 'Thalia',
-        url: 'https://www.thalia.de/shop/home/artikeldetails/A1078419475'  // ← deine URL eintragen
+        url: 'https://www.thalia.de/shop/home/artikeldetails/A1078534945'
     }
 ]
 
